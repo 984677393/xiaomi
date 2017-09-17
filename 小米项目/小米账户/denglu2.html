@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小米账号登录2</title>
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css">
+    <script src="../jquery/dist/jquery.js"></script>
+    <script src="../bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../localStage.js"></script>
+</head>
+<style>
+  body{
+    background-color: #f9f9f9;
+  }
+  .background {
+    background-color: #ffffff;
+    height:600px;
+    margin-top: 100px;
+  }
+</style>
+<body>
+<div class="container">
+  <div class="background " >
+
+    <img src="QQ图片20170826115629.png" class="img-responsive center-block zhdenglu"  >
+    <img src="二维码点击.gif" class="img-responsive zhdenglu" onclick="sm()" style="position: absolute;top: 100px;right: 390px">
+    <div class="smdenglu" onclick="zh()" style="background-color: darkgray;width: 40px;height: 40px;border-radius: 20px;position: absolute;top: 110px;right: 400px ">
+      <span aria-hidden="true" style="width: 27px;height: 27px">&times;</span></div>
+    <h1 class="text-center zhdenglu">小米账号登录</h1>
+    <h1 class="text-center smdenglu" style="color: orange"><br><br>小米帐号扫码登录</h1>
+    <p  class="text-center smdenglu text-muted">请打开「设置 > 小米帐号 > 右上角扫一扫」扫码登录<br></p>
+    <img src="二维码.png" class="img-responsive center-block smdenglu" style="width: 300px;height: 300px">
+    <br><br>
+    <div class="form-group zhdenglu" >
+      <div class=" col-lg-offset-4 col-lg-4">
+          <input class="form-control" id="inputname" type="text" placeholder="邮箱/手机号码/小米账号" style="height: 40px;font-size: 15px">
+      </div>
+    </div>
+      <br><br>
+
+      <div class="form-group zhdenglu" >
+        <div class=" col-lg-offset-4 col-lg-4">
+          <input class="form-control" id="inputpassword" type="password" placeholder="密码" style="height: 40px;font-size: 15px">
+
+        </div>
+      </div>
+
+      <div class="form-group zhdenglu">
+        <div class="row">
+          <div class=" col-lg-offset-4 col-lg-4" style="margin-top: 20px">
+            <button class="btn btn-warning btn-lg  btn-block" id="lijidenglu" type="button"  >立即登录</button>
+          </div>
+        </div>
+      </div>
+    <br>
+      <div class="container-fluid col-lg-offset-4 col-lg-4 zhdenglu" >
+        <div class="col-lg-4" style="border-top: 1px solid silver"></div>
+        <div class="col-lg-4 text-muted" style="font-size: 10px;margin-top: -9px">其他方式登录</div>
+        <div class="col-lg-4" style="border-top: 1px solid silver"></div>
+      </div>
+    <br><br>
+    <div class="container-fluid col-lg-offset-4 col-lg-4 zhdenglu" >
+      <div class="row" style="margin-top: 11px">
+        <div class="col-lg-3" style="margin-left: 19px"><img src="QQ.png" style="width: 66%;height: 66%"></div>
+        <div class="col-lg-3" style="margin-top: 3px;margin-left:-10px "><img src="微信.png"  style="width: 70%;height: 70%"></div>
+        <div class="col-lg-3" style="margin-top: 3.2px"><img src="微博.png" style="width: 60%;height: 60%" ></div>
+        <div class="col-lg-3" style="margin-left:-9px "><img src="支付宝.png" style="width: 70%;height: 70%" ></div>
+      </div>
+    </div>
+    <br>
+    <div class="container-fluid col-lg-offset-4 col-lg-4 zhdenglu" style="margin-top: 50px;margin-left: 430px">
+      <nav class="navbar-default" >
+        <ul class=" nav navbar-nav">
+          <li class="navbar-collapse">
+            <a data-toggle="collapse" href="#collapseExample"><p>注册小米账号</p></a>
+          </li>
+          <li><a href="#" class="text-muted" ><p style="border-left: 1px solid silver;margin-left: -30px">
+            &nbsp;&nbsp;忘记密码?</p></a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+  </div>
+</div>
+</body>
+<script>
+  $('.smdenglu').hide();
+  function zh() {
+    $('.zhdenglu').show();
+    $('.smdenglu').hide();
+  }
+  function sm() {
+    $('.zhdenglu').hide();
+    $('.smdenglu').show();
+  }
+</script>
+<script>
+  $('#lijidenglu').click(function () {
+    var yhm1 = document.getElementById('inputname').value;
+    var mima1 = document.getElementById('inputpassword').value;
+    var aaa = store.get('User')
+    var yhm2 = aaa.phone;
+    var mima2 = store.get('keyPassword')
+    if (yhm1 == yhm2 && mima1 == mima2) {
+      store.update('keyAA',true);
+      window.location.href="../小米首页/index.html";
+    }
+    else {
+      alert('密码错误');
+    };
+  });
+</script>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册小米账号</title>
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css">
+    <script src="../jquery/dist/jquery.js"></script>
+    <script src="../bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../localStage.js"></script>
+</head>
+  <style>
+    body{
+      background-color: #f9f9f9;
+    }
+    .background {
+      background-color: #ffffff;
+      height:600px;
+      margin-top: 100px;
+    }
+  </style>
+<body>
+<div class="container">
+    <div class="background ">
+          <img src="QQ图片20170826115629.png" class="img-responsive center-block" >
+          <h1 class="text-center">注册小米账号</h1>
+
+            <div class="form-group" >
+                <div class=" col-lg-offset-4 col-lg-4">
+                <div   class="help-block">国家/地区</div>
+                  <div class="btn-group">
+                    <button type="button" class="btn dropdown-toggle ones" style="width: 350px"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="text-center">中国</span>
+                      <span class="glyphicon glyphicon-ok-circle" style="position: absolute ;right: 10px;top: 10px;"></span></button>
+                    <div class="dropdown-menu one"></div>
+                </div>
+                  <p class="help-block " style="margin-left: 14px">成功注册帐号后，国家/地区将不能被修改</p>
+            </div>
+
+            <div class="form-group">
+              <div class=" col-lg-offset-4 col-lg-4">
+                  <div class="help-block">手机号码</div>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default dropdown-toggle look" style="width: 70px" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">+86</button>
+                         <div class="dropdown-menu two"></div>
+                     </span>
+                  <input type="text" id="number" class="form-control number" style="width: 280px"  placeholder="请输入手机号码">
+                  </div>
+                  <div id="sure"></div>
+                    </div>
+                </div>
+
+
+            <div class="form-group">
+              <div class=" col-lg-offset-4 col-lg-4">
+              <div class="help-block">短信验证码</div>
+                <div class="input-group">
+                  <input  id="yzcode" type="text" class="btn btn-default"  placeholder="输入短信验证码">
+                  <input  id="btn"  class="btn btn-default start" type="button" value="免费获取验证码" onclick="settime(this)"  style="margin-left: 30px">
+                </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+              <div class="row">
+                <div class=" col-lg-offset-4 col-lg-4" style="margin-top: 20px">
+                <button class="btn btn-warning btn-lg  btn-block" id="zhuce" type="button"  >立即注册</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="row">
+                <div class=" col-lg-offset-4 col-lg-4">
+                  <span>注册账号即表示您同意并愿意遵守小米<strong><a href="yonghuxieyi.html">用户协议</a></strong>和<strong><a href="yinsizhengce.html">隐私政策</a></strong></span>
+                </div>
+              </div>
+            </div>
+
+</div>
+    </div>
+  </div>
+
+  <script>
+    $(function () {
+      $.getJSON('country.json',function (data) {
+        var html = '';
+        for(category in data){
+          html += '<h4>'+ category +'</h4>';
+          html += '<div class="list-group">';
+          for(var i = 0, len = data[category].length; i < len; i++){
+            html+='<a class="list-group-item" href="#">'+ data[category][i].C +'</a>'
+          }
+          html+='</div>'
+        }
+        $('.one').html(html);
+        var item='';
+        for(category in data){
+          item += '<h4>'+ category +'</h4>';
+          item += '<div class="list-group">';
+          for(var i = 0, len = data[category].length; i < len; i++){
+            item+='   <a class="list-group-item" href="#">';
+            item+='  <span>'+ data[category][i].C +'</span>';
+            item+='  <span style="float: right">'+ data[category][i].N +'</span>';
+            item+='</a>'
+          }
+          item+='</div>'
+        }
+        $('.two').html(item);
+      });
+      $('.one').on('click','a',function () {
+        $('.btn-group button')[0].innerText = $(this)[0].innerText;
+      });
+      $('.two').on('click','a',function () {
+        $('.input-group button')[0].innerText = $(this).children().eq(1)[0].innerText;
+      })
+    })
+  </script>
+<script type="text/javascript">
+  var countdown=60;
+  function settime(obj) {
+    if (countdown == 0) {
+      obj.removeAttribute("disabled");
+      obj.value="免费获取验证码";
+      countdown = 60;
+      return;
+    } else {
+      obj.setAttribute("disabled", false);
+      obj.value="重新发送(" + countdown + ")";
+      countdown--;
+    }
+    setTimeout(function() {
+        settime(obj) }
+      ,1000)
+  }
+</script>
+<script>
+  var random=0;
+  $('.start').click(function () {
+    random=four(Math.round(Math.random()*9999));
+    console.log(random.toString());
+    var param = {
+      no:random.toString()
+    };
+
+    $.ajax({
+      url: 'http://sms.market.alicloudapi.com/singleSendSms',
+      type: 'GET',
+      dataType: 'json',
+      data: {
+        ParamString:JSON.stringify(param),
+        RecNum:$('.number').val(),
+        SignName: "陈培垄",
+        TemplateCode: 'SMS_95130020'
+      },
+      headers: {
+        Authorization: 'APPCODE 9c90e69debe94e48abb5a453b56af7bc'
+      }
+    }).done(function (data) {
+      console.log(666,data);
+    });
+
+    console.log(random);
+  });
+
+
+
+
+  $('#zhuce').click(function () {
+    if (random == $('#yzcode').val()) {
+      var user = {
+        phone:$('#number').val()
+      };
+      store.add("User",user);
+      window.location.href='user.html';
+    } else {
+      alert('验证码错误');
+    }
+  });
+
+
+
+
+  function four(num){
+    var str=num.toString();
+    var len=str.length;
+    if(len<4){
+      for(var i=0;i<4-len;i++){
+        str='0'+str;
+      }
+    }
+    return str;
+  }
+</script>
+<script>
+  $('#number').blur(function () {
+    var number= document.getElementById('number').value;
+    if(!(/^1(3|4|5|7|8)\d{9}$/.test(number))){
+      document.getElementById('sure').innerHTML='手机号码不正确，请确认';
+      document.getElementById('sure').style.color='red';
+      document.getElementById('number').style.border='1px solid red';
+    }else {
+      document.getElementById('sure').innerHTML='手机号码输入正确';
+      document.getElementById('sure').style.color='green';
+      document.getElementById('number').style.border='1px solid green';
+    }
+  })
+</script>
+</body>
+</html>

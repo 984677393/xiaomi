@@ -1,0 +1,76 @@
+body{
+  background-color: #f9f9f9;
+}
+
+.img1{
+  background: url("图标.png");
+  background-repeat: no-repeat;
+  background-position: -160px 0px;
+  height: 40px;
+  width: 40px;
+  margin-left: 30px;
+}
+.img2{
+  background: url("图标.png");
+  background-repeat: no-repeat;
+  background-position: -320px 0px;
+  height: 40px;
+  width: 40px;
+  margin-left: 30px;
+}
+.img3{
+   background: url("图标.png");
+   background-repeat: no-repeat;
+   background-position: -120px 0px;
+   height: 40px;
+   width: 40px;
+   margin-left: 30px;
+ }
+.img4{
+  background: url("图标.png");
+  background-repeat: no-repeat;
+  background-position: -280px 0px;
+  height: 40px;
+  width: 40px;
+  margin-left: 30px;
+}
+.img5{
+  background: url("图标.png");
+  background-repeat: no-repeat;
+  background-position: -80px 0px;
+  height: 40px;
+  width: 40px;
+  margin-left: 30px;
+}
+.img6{
+  background: url("图标.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  height: 40px;
+  width: 40px;
+  margin-left: 30px;
+}
+.img7{
+  background: url("图标.png");
+  background-repeat: no-repeat;
+  background-position: -240px 0px;
+  height: 40px;
+  width: 40px;
+  margin-left: 30px;
+}
+.img8{
+  background: url("图标.png");
+  background-repeat: no-repeat;
+  background-position: -40px 0px;
+  height: 40px;
+  width: 40px;
+  margin-left: 30px;
+}
+.img9{
+  background: url("图标.png");
+  background-repeat: no-repeat;
+  background-position: -200px 0px;
+  height: 40px;
+  width: 40px;
+  margin-left: 30px;
+}

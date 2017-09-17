@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>路由器/智能硬件-小米商场</title>
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css">
+    <script src="../jquery/dist/jquery.js"></script>
+    <script src="../bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../localStage.js"></script>
+</head>
+<style>
+  .daohanglan ul li{
+    margin-left: -15px;
+    margin-top: auto;
+  }
+  .daohanglan1 ul li{
+    margin-left: 60px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .daohanglan2 ul li{
+    margin-left: 65px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+</style>
+<body>
+<div class="container-fluid"style="background-color: #343434;height: 50px;">
+  <div class="container">
+    <div class="row">
+      <nav class="daohanglan navbar-inverse ">
+        <ul class=" nav navbar-nav" style="margin-left: 0px">
+          <li><a href="../小米首页/index.html">小米商城</a></li>
+          <li><a href="#">MIUI</a></li>
+          <li><a href="#">米聊</a></li>
+          <li><a href="#">游戏</a></li>
+          <li><a href="#">多看阅读</a></li>
+          <li><a href="#">云服务</a></li>
+          <li><a href="#">金融</a></li>
+          <li><a href="#">小米商城手机版</a></li>
+          <li><a href="#">问题反馈</a></li>
+          <li><a href="#">Select Region</a> </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" id="denglu"></a></li>
+          <li><a href="#">注册</a></li>
+          <li><a href="#">消息通知</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="hover" id="dropdownMenu1">购物车<span class="caret"></span></a>
+            <div class="dropdown-menu dropdown-menu-right xialayangshi" aria-labelledby="dropdownMenu1">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <img class="img-thumbnail" src="QQ截图20170830100218.bmp" alt="">
+                  </div>
+                  <div class="col-lg-6">
+                    小米6 硅胶保护套 红色
+                  </div>
+                  <div class="col-lg-3">
+                    49元 × 1
+                    <button type="button"   class="gouwucheanniu close"><span >&times;</span></button>
+                  </div>
+                </div>
+                <div class="divider"></div>
+
+                <div class="row">
+                  <div class="col-lg-3">
+                    <img class="img-thumbnail" src="QQ截图20170830100154.bmp" alt="">
+                  </div>
+                  <div class="col-lg-6">
+                    小米笔记本Air 13 i5 8G 256G 2G独显
+                  </div>
+                  <div class="col-lg-3">
+                    5499元 × 1
+                    <button type="button"   class="gouwucheanniu close"><span>&times;</span></button>
+                  </div>
+                </div>
+                <div class="divider"></div>
+
+
+                <div class="row">
+                  <div class="col-lg-3">
+                    <img class="img-thumbnail" src="QQ截图20170830100206.bmp" alt="">
+                  </div>
+                  <div class="col-lg-6">
+                    小米笔记本Air 13.3英寸 银色
+                  </div>
+                  <div class="col-lg-3">
+                    暂时缺货
+                    <button type="button" class="gouwucheanniu close"><span>&times;</span></button>
+                  </div>
+                </div>
+                <div class="divider"></div>
+
+                <div class="row">
+                  <div class="col-lg-3">
+                    <img class="img-thumbnail" src="QQ截图20170830102204.bmp" alt="">
+                  </div>
+                  <div class="col-lg-6">
+                    小米便携鼠标 银色
+                  </div>
+                  <div class="col-lg-3">
+                    99元 × 1
+                    <button type="button" class="gouwucheanniu close"><span>&times;</span></button>
+                  </div>
+                </div>
+                <div class="divider"></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+<div class="main container" >
+  <div class="toubu" style="margin-left: -15px">
+    <div class="row">
+      <div class=" col-lg-2"><img src="QQ图片20170824101322.png" ></div>
+
+      <div  class="col-lg-10 " >
+        <nav class="daohanglan navbar-default">
+          <ul class=" nav navbar-nav">
+            <li><a href="#">全部商品分类</a></li>
+            <li><a href="#">小米手机</a></li>
+            <li><a href="#">红米</a></li>
+            <li><a href="#">平板*笔记本</a></li>
+            <li><a href="#">电视</a></li>
+            <li><a href="#">盒子*影音</a></li>
+            <li><a href="#">路由器</a></li>
+            <li><a href="#">智能硬件</a></li>
+            <li><a href="#">服务</a></li>
+            <li><a href="#">社区</a></li>
+          </ul>
+
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <div class="input-group input-group-lg">
+                <input class="form-control" type="text">
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="button">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------------------------------------------------------------------------->
+<div class="container-fluid" style="background-color: #f5f5f5">
+
+  <div class="container">
+    <p style="margin: 15px;margin-left: -15px">首页 > 所有商品 > 路由器/智能硬件</p>
+  </div>
+</div>
+  <div class="container" style="background-color: white" >
+    <nav class="daohanglan1 navbar-default">
+      <ul class=" nav navbar-nav " >
+        <li style="margin-top: 30px">分类：</li>
+        <li ><a href="#" >全部</a></li>
+        <li><a href="#">路由器</a></li>
+        <li><a href="#">路由器配件</a></li>
+        <li><a href="#">净化器</a></li>
+        <li><a href="#">净水器</a></li>
+        <li><a href="#">摄像机</a></li>
+        <li><a href="#">更多</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container" style="background-color: white;border-top: 1px solid silver" >
+    <nav class="daohanglan2 navbar-default">
+      <ul class=" nav navbar-nav " >
+        <li style="margin-top: 30px">品牌</li>
+        <li><a href="#">全部</a></li>
+        <li><a href="#">智米</a></li>
+        <li><a href="#">小方</a></li>
+        <li><a href="#">米家</a></li>
+        <li><a href="#">小蚁</a></li>
+        <li><a href="#">小米</a></li>
+        <li><a href="#">更多</a></li>
+      </ul>
+    </nav>
+ </div>
+
+  <div class="container-fluid" style="background-color: #f5f5f5">
+    <div class="container">
+      <nav class="daohanglan navbar-default">
+        <ul class=" nav navbar-nav">
+          <li ><a href="#" >推荐</a></li>
+          <li><a href="#"  >新品</a></li>
+          <li><a href="#"  >价格↑</a></li>
+          <li><a href="#"  >评论最多</a></li>
+        </ul>
+      </nav>
+
+      <nav class="daohanglan navbar-default " style="margin-left:600px">
+       <div class="checkbox">
+           <div class="radio-inline col-lg-3" >
+             <label>
+               <input type="radio" name="sex"   value="男">查看评价
+             </label>
+           </div>
+
+           <div class="radio-inline col-lg-4" >
+             <label>
+               <input type="radio" name="sex"   value="男">仅显示特惠商品
+             </label>
+           </div>
+
+           <div class="radio-inline col-lg-4">
+             <label>
+               <input type="radio" name="sex"   value="女">仅显示有货商品
+             </label>
+         </div>
+
+       </div>
+      </nav>
+    </div>
+
+    <div class="container" >
+    <div class="row" style="margin-left: -30px">
+          <div class="col-lg-3">
+            <div class="thumbnail" style="border: none">
+            <div class="row">
+              <img src="1.jpg" class="img-responsive center-block">
+              <p class="text-center">米兔积木机器人 履带机甲</p>
+              <p class="text-center" style="color: orange">499元</p>
+            </div>
+              </div>
+          </div>
+      <div class="col-lg-3">
+        <div class="thumbnail" style="border: none">
+        <div class="row">
+          <img src="1.jpg" class="img-responsive center-block">
+          <p class="text-center">米兔积木机器人 履带机甲</p>
+          <p class="text-center" style="color: orange">499元</p>
+        </div>
+          </div>
+      </div>
+      <div class="col-lg-3" >
+        <div class="thumbnail" style="border: none">
+        <div class="row">
+          <img src="1.jpg" class="img-responsive center-block">
+          <p class="text-center">米兔积木机器人 履带机甲</p>
+          <p class="text-center" style="color: orange">499元</p>
+        </div>
+          </div>
+      </div>
+      <div class="col-lg-3" >
+        <div class="thumbnail" style="border: none">
+        <div class="row">
+          <img src="1.jpg" class="img-responsive center-block">
+          <p class="text-center">米兔积木机器人 履带机甲</p>
+          <p class="text-center" style="color: orange">499元</p>
+        </div>
+          </div>
+      </div>
+
+          <div class="col-lg-3">
+            <div class="thumbnail" style="border: none">
+              <div class="row">
+                <img src="1.jpg" class="img-responsive center-block">
+                <p class="text-center">米兔积木机器人 履带机甲</p>
+                <p class="text-center" style="color: orange">499元</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="thumbnail" style="border: none">
+              <div class="row">
+                <img src="1.jpg" class="img-responsive center-block">
+                <p class="text-center">米兔积木机器人 履带机甲</p>
+                <p class="text-center" style="color: orange">499元</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3" >
+            <div class="thumbnail" style="border: none">
+              <div class="row">
+                <img src="1.jpg" class="img-responsive center-block">
+                <p class="text-center">米兔积木机器人 履带机甲</p>
+                <p class="text-center" style="color: orange">499元</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3" >
+            <div class="thumbnail" style="border: none">
+              <div class="row">
+                <img src="1.jpg" class="img-responsive center-block">
+                <p class="text-center">米兔积木机器人 履带机甲</p>
+                <p class="text-center" style="color: orange">499元</p>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+<div class="footer container-fluid">
+  <div class="container" style="margin-top: 30px;">
+    <div class="col-lg-3">
+      <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+      <span style="font-size: 20px">预约维修服务</span></div>
+    <div class="col-lg-3" style="border-left:1px solid silver">
+      <span class=" glyphicon glyphicon-time" aria-hidden="true"></span>
+      <span style="font-size: 20px">7天无理由退货</span></div>
+    <div class="col-lg-3" style="border-left:1px solid silver">
+      <span class=" glyphicon glyphicon-download" aria-hidden="true"></span>
+      <span style="font-size: 20px">15天免费换货</span></div>
+    <div class="col-lg-3" style="border-left:1px solid silver">
+      <span class=" glyphicon glyphicon-upload" aria-hidden="true"></span>
+      <span style="font-size: 20px">满150元包邮</span></div>
+  </div>
+  <div class="container"><hr></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9" >
+        <div class="row">
+          <div class="col-lg-2">
+            <h4>帮助中心</h4><br>
+            <span class="text-muted">账户管理</span><br>
+            <span class="text-muted">购物指南</span><br>
+            <span class="text-muted">订单操作</span>
+          </div>
+          <div class="col-lg-2"> <h4>服务支持</h4><br>
+            <span class="text-muted">售后政策</span><br>
+            <span class="text-muted">自助服务</span><br>
+            <span class="text-muted">相关下载</span></div>
+          <div class="col-lg-2"><h4>线下门店</h4><br>
+            <span class="text-muted">小米之家</span><br>
+            <span class="text-muted">服务网点</span><br>
+            <span class="text-muted">零售网点</span></div>
+          <div class="col-lg-2"><h4>关于小米</h4><br>
+            <span class="text-muted">了解小米</span><br>
+            <span class="text-muted">加入小米</span><br>
+            <span class="text-muted">联系我们</span></div>
+          <div class="col-lg-2"><h4>关注我们</h4><br>
+            <span class="text-muted">新浪微博</span><br>
+            <span class="text-muted">小米部落</span><br>
+            <span class="text-muted">官方微信</span></div>
+          <div class="col-lg-2"><h4>特色服务</h4><br>
+            <span class="text-muted">F码通道</span><br>
+            <span class="text-muted">礼物码</span><br>
+            <span class="text-muted">防伪查询</span></div>
+        </div>
+      </div>
+      <div class="col-lg-3" style="border-left: 1px solid silver;margin-left: -7px">
+        <p class="text-center" style="color: orange;font-size: 25px">400-100-5678</p>
+        <p class="text-muted text-center">周一至周日 8:00-18:00</p>
+        <p class="text-muted text-center">(仅收市话费)</p>
+        <button class="btn btn-default center-block" type="submit" style="border: 1px solid orange">
+          <span class=" glyphicon glyphicon-comment" style="color: orange" aria-hidden="true"></span>
+          <span style="color: orange">24小时在线客服</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="margin-top: 45px">
+    <div class="row">
+      <div class="col-lg-8" >
+        <div class="row">
+          <div class="col-lg-1" style="">
+            <img src="QQ图片20170824101322.png">
+          </div>
+          <div class="col-lg-11" style="margin-top: -15px">
+            <nav class="daohanglan navbar-default" >
+              <ul class=" nav navbar-nav" style="height: 40px" >
+                <li><a href="#">小米商城</a></li>
+                <li><a href="#">MIUI</a></li>
+                <li><a href="#">米聊</a></li>
+                <li><a href="#">游戏</a></li>
+                <li><a href="#">多看阅读</a></li>
+                <li><a href="#">云服务</a></li>
+                <li><a href="#">金融</a></li>
+                <li><a href="#">小米商城手机版</a></li>
+                <li><a href="#">问题反馈</a></li>
+                <li><a href="#">Select Region</a> </li>
+              </ul>
+            </nav>
+                <span class="text-muted" style="font-size: 7px;">©mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号
+                  京网文[2014]0059-0009号违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4" style="">
+        <div class="row">
+          <div class="col-lg-3"><img src="尾部图片1.png"  class="img-responsive"></div>
+          <div class="col-lg-3"><img src="尾部图片2.png"  class="img-responsive"></div>
+          <div class="col-lg-3"><img src="尾部图片3.png"  class="img-responsive"></div>
+          <div class="col-lg-3"><img src="尾部图片4.png"  class="img-responsive"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container" style="margin-top: 40px">
+    <h3 class="text-center text-muted">探索黑科技，小米为发烧而生！</h3>
+  </div>
+
+</div>
+</body>
+</html>

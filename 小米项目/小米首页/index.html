@@ -1,0 +1,1792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小米首页</title>
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="../jquery/dist/jquery.js"></script>
+    <script src="../bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../localStage.js"></script>
+    <script>
+      $ (function () {
+            $('[data-toggle=hover]').parent().hover(function () {
+             $(this).addClass('open');
+             },function () {
+             $(this).removeClass('open');
+             });
+          })
+    </script>
+    <script>
+      $(function () {
+        $('#quedingshangchu').click(function(){
+        $('#gouwuche1').remove();
+        })
+      })
+    </script>
+
+</head>
+<body>
+    <div class="biaoti container-fluid"></div>
+    <div class="biaotilan container-fluid">
+      <div class="container">
+        <div class="row">
+        <nav class="daohanglan navbar-inverse " style="margin-top: 0px">
+          <ul class=" nav navbar-nav">
+            <li><a href="#">小米商城</a></li>
+            <li><a href="#">MIUI</a></li>
+            <li><a href="#">米聊</a></li>
+            <li><a href="#">游戏</a></li>
+            <li><a href="#">多看阅读</a></li>
+            <li><a href="#">云服务</a></li>
+            <li><a href="#">金融</a></li>
+            <li><a href="#">小米商城手机版</a></li>
+            <li><a href="#">问题反馈</a></li>
+            <li><a href="#">Select Region</a> </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right col-lg-offset-9 col-lg-3" >
+            <li>
+              <a href="#" id="denglu2"class="dropdown-toggle" data-toggle="hover" id="dropdownMenu3">1111111111111<span class="caret"></span></a>
+              <div class="dropdown-menu xialayangshi2"  aria-labelledby="dropdownMenu3">
+              <nav class="">
+              <ul class="nav" >
+              <li><a href="../小米个人中心/index.html">个人中心</a></li>
+              <li><a href="#">评价晒单</a></li>
+              <li><a href="#">我的喜欢</a></li>
+              <li><a href="../小米账户/index.html" target="_blank">小米账户</a></li>
+              <li><a href="#" onclick="outdenglu()">退出登录</a></li>
+              </ul>
+              </nav>
+              </div>
+            </li>
+            <li><a href="../小米账号-登录/index.html"  id="denglu1">登录</a></li>
+
+            <li><a href="../小米注册/index.html" id="zhuce">注册</a></li>
+            <li><a href="#">消息通知</a></li>
+            <li class="dropdown">
+              <a href="#" id="gouwuche3" class="dropdown-toggle" data-toggle="hover" id="dropdownMenu1">购物车<span class="caret"></span></a>
+              <div  class="dropdown-menu dropdown-menu-right xialayangshi" aria-labelledby="dropdownMenu1">
+                <div class="container-fluid">
+                  <div class="row" id="gouwuche1">
+                    <div class="col-lg-3">
+                      <img class="img-thumbnail" src="QQ截图20170830100218.bmp" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                      小米6 硅胶保护套 红色
+                    </div>
+                    <div class="col-lg-3">
+                      49元 × 1
+                      <a href="#" ><span class="glyphicon glyphicon-edit"></span></a>
+                      <a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-trash" ></span></a>
+                    </div>
+                  </div>
+                  <div class="divider"></div>
+
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <img class="img-thumbnail" src="QQ截图20170830100154.bmp" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                      小米笔记本Air 13 i5 8G 256G 2G独显
+                    </div>
+                    <div class="col-lg-3">
+                     5499元 × 1
+                      <a href="#"  ><span class="glyphicon glyphicon-edit"></span></a>
+                      <a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-trash"></span></a>
+                    </div>
+                  </div>
+                  <div class="divider"></div>
+
+
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <img class="img-thumbnail" src="QQ截图20170830100206.bmp" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                      小米笔记本Air 13.3英寸 银色
+                    </div>
+                    <div class="col-lg-3">
+                      暂时缺货
+                      <a href="#" ><span class="glyphicon glyphicon-edit"></span></a>
+                      <a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-trash"></span></a>
+                    </div>
+                  </div>
+                  <div class="divider"></div>
+
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <img class="img-thumbnail" src="QQ截图20170830102204.bmp" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                      小米便携鼠标 银色
+                    </div>
+                    <div class="col-lg-3">
+                      99元 × 1
+                      <a href="#" ><span class="glyphicon glyphicon-edit"></span></a>
+                      <a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-trash"></span></a>
+                    </div>
+                  </div>
+                  <div class="divider"></div>
+
+                </div>
+              </div>
+              </li>
+            <li>
+              <a href="#" id="gouwuche2" class="dropdown-toggle" data-toggle="hover" id="dropdownMenu2">购物车<span class="caret"></span></a>
+              <div  class="dropdown-menu dropdown-menu-right xialayangshi" style="height: 80px" aria-labelledby="dropdownMenu2">
+                <p class="text-center" style="margin-top: 27px">购物车中还没有商品，赶紧选购吧！</p>
+              </div>
+            </li>
+          </ul>
+        <!--<nav class="gouwuche navbar-inverse col-lg-2 ">-->
+            <!--<a href="#" data-toggle="dropdown" >购物车<span class="caret"></span></a>-->
+            <!--<ul class="dropdown-menu">-->
+              <!--<li>小米6硅胶保护套 红色</li>-->
+              <!--<li class="divider"></li>-->
+              <!--<li>小米6 标准高透贴膜 透明</li>-->
+              <!--<li class="divider"></li>-->
+              <!--<li>小米笔记本Air 13 i5 8G 256G 2G独</li>-->
+              <!--<li class="divider"></li>-->
+              <!--<li>小米便携鼠标 银色</li>-->
+            <!--</ul>-->
+        </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" >
+      <div class="toubu" style="margin-top: 10px">
+        <div class="row">
+          <div class=" col-lg-2"><img src="QQ图片20170824101322.png" ></div>
+
+          <div  class="col-lg-10 " >
+
+            <nav class="daohanglan navbar-default" >
+                <ul class=" nav navbar-nav">
+
+                    <li class="navbar-collapse">
+                      <a data-toggle="collapse" href="#collapseExample">小米手机</a>
+                    </li>
+                  <li><a href="#">红米</a></li>
+                  <li><a href="#">平板*笔记本</a></li>
+                  <li><a href="#">电视</a></li>
+                  <li><a href="#">盒子*影音</a></li>
+                  <li><a href="#">路由器</a></li>
+                  <li><a href="#">智能硬件</a></li>
+                  <li><a href="#">服务</a></li>
+                  <li><a href="#">社区</a></li>
+                </ul>
+            </nav>
+
+            <form class="navbar-form navbar-right">
+              <div class="form-group">
+                <div class="input-group input-group-lg">
+                  <input class="form-control" type="text">
+                  <div class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                      <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+
+          </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="collapse container-fluid" id="collapseExample" style="z-index: 1000;position: absolute;top: 26%;left: 16.15%;
+      margin-left: 0px;">
+      <div class="container">
+      <div class="container">
+      <div class="container">
+      <div class="container" style="background-color: white;border-top: 1px solid silver;border-bottom: 1px solid silver;">
+            <div class="row" >
+              <div class="col-lg-2" style="margin-top: 15px">
+                <img src="小米6手机.png" style="width: 80%;height: 40%;" class="center-block">
+                <p class="text-center">小米6</p>
+                <p class="text-center text-danger">2499元起</p>
+              </div>
+              <div class="col-lg-2" style="margin-top: 15px">
+                <img src="小米6手机.png" style="width: 80%;height: 40%;border-left: 1px solid silver;" class="center-block">
+                <p class="text-center">小米6</p>
+                <p class="text-center text-danger">2499元起</p>
+              </div>
+              <div class="col-lg-2" style="margin-top: 15px">
+                <img src="小米6手机.png" style="width: 80%;height: 40%;border-left: 1px solid silver;" class="center-block">
+                <p class="text-center">小米6</p>
+                <p class="text-center text-danger">2499元起</p>
+              </div>
+              <div class="col-lg-2"  style="margin-top: 15px">
+                <img src="小米6手机.png" style="width: 80%;height: 40%;border-left: 1px solid silver;" class="center-block">
+                <p class="text-center">小米6</p>
+                <p class="text-center text-danger">2499元起</p>
+              </div>
+              <div class="col-lg-2" style="margin-top: 15px">
+                <img src="小米6手机.png" style="width: 80%;height: 40%;border-left: 1px solid silver;" class="center-block">
+                <p class="text-center">小米6</p>
+                <p class="text-center text-danger">2499元起</p>
+              </div>
+              <div class="col-lg-2" style="margin-top: 15px">
+                <img src="小米6手机.png" style="width: 80%;height: 40%;border-left: 1px solid silver;" class="center-block">
+                <p class="text-center">小米6</p>
+                <p class="text-center text-danger">2499元起</p>
+              </div>
+            </div>
+        </div>
+      </div></div></div>
+    </div>
+
+    <div class="container">
+    <div class="row" style="position: relative">
+    <div class="daohang col-md-3" style="z-index: 999;height: 455.5px">
+      <div class="list-group " style="margin-top: 25px;margin-right: -15px;margin-left: -15px;">
+        <a class="list-group-item " href="#" id="app" data-toggle="popover"  data-placement="right"
+        style="border: none; background-color: rgba(0,0,0,0.0);color: white">
+          手机 电话卡 <span class="glyphicon glyphicon-chevron-right pull-right "></span></a>
+        <a class="list-group-item" href="#" style="border: none; background-color: rgba(0,0,0,0.0);color: white">
+          笔记本 平板 <span class="glyphicon glyphicon-chevron-right pull-right "></span></a>
+        <a class="list-group-item" href="#" style="border: none; background-color: rgba(0,0,0,0.0);color: white">
+          电视 盒子 <span class="glyphicon glyphicon-chevron-right pull-right "></span></a>
+        <a class="list-group-item" href="#" style="border: none; background-color: rgba(0,0,0,0.0);color: white">
+          路由器 智能硬件 <span class="glyphicon glyphicon-chevron-right pull-right "></span></a>
+        <a class="list-group-item" href="#" style="border: none; background-color: rgba(0,0,0,0.0);color: white">
+          移动电源 电池 插线板 <span class="glyphicon glyphicon-chevron-right pull-right "></span></a>
+        <a class="list-group-item" href="#" style="border: none; background-color: rgba(0,0,0,0.0);color: white">
+          耳机 音箱 <span class="glyphicon glyphicon-chevron-right pull-right "></span></a>
+        <a class="list-group-item" href="#" style="border: none; background-color: rgba(0,0,0,0.0);color: white">
+          保护套 贴膜 <span class="glyphicon glyphicon-chevron-right pull-right "></span></a>
+        <a class="list-group-item" href="#" style="border: none; background-color: rgba(0,0,0,0.0);color: white">
+          线材 支架 存储卡<span class="glyphicon glyphicon-chevron-right pull-right "></span></a>
+        <a class="list-group-item" href="#" style="border: none; background-color: rgba(0,0,0,0.0);color: white">
+          箱包 服饰 鞋 眼镜 <span class="glyphicon glyphicon-chevron-right pull-right "></span></a>
+        <a class="list-group-item" href="#" style="border: none; background-color: rgba(0,0,0,0.0);color: white">
+          米兔 生活周边 <span class="glyphicon glyphicon-chevron-right pull-right "></span></a>
+      </div>
+    </div>
+
+
+      <div class="jiemian col-lg-12">
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+          <ol class="carousel-indicators center-block" >
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+          </ol>
+
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="巨幕.jpg" style="width:100%;height: 455.5px;">
+              <div class="carousel-caption">
+              </div>
+            </div>
+            <div class="item">
+              <img src="巨幕1.jpg" style="width:100%;height: 455.5px;">
+              <div class="carousel-caption">
+              </div>
+            </div>
+            <div class="item ">
+              <img src="巨幕2.jpg" style="width:100%;height: 455.5px;">
+              <div class="carousel-caption">
+              </div>
+            </div>
+            <div class="item ">
+              <img src="巨幕3.jpg" style="width:100%;height: 455.5px;">
+              <div class="carousel-caption">
+              </div>
+            </div>
+            <div class="item ">
+              <img src="巨幕4.jpg" style="width:100%;height: 455.5px;">
+              <div class="carousel-caption">
+              </div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"
+             style="margin-left: 25.5%;z-index: 100;position: absolute;left: 0px;top:0px">
+            <span class="glyphicon glyphicon-chevron-left center-block" aria-hidden="true" ></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right center-block" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+      </div>
+      </div>
+    </div>
+
+
+    <div class="main1 container" >
+      <div class="main11 col-lg-3 ">
+        <div class="row"  style="  background-color: #605851;margin-left: 0px;margin-right: -30px">
+          <nav class="daohanglan navbar-inverse " style="margin-left: 30px">
+            <ul class=" nav navbar-nav" >
+              <li><a href="#"><span class="glyphicon glyphicon-wrench text-center" aria-hidden="true"></span><br>选购手机</a></li>
+              <li style="border-left: 1px solid darkgray"><a href="#"><span class="glyphicon glyphicon glyphicon-calendar " aria-hidden="true"></span><br>企业团购</a></li>
+              <li style="border-left: 1px solid darkgray"><a href="#"><span class="glyphicon glyphicon glyphicon-calendar" aria-hidden="true"></span><br>F码通道</a></li>
+            </ul>
+            <ul class=" nav navbar-nav" style="margin-top: -10px;margin-bottom: -8px">
+              <li style="border-top: 1px solid darkgray"><a href="#"><span class="glyphicon glyphicon glyphicon-calendar " aria-hidden="true"></span><br>选购手机</a></li>
+              <li style="border-left: 1px solid darkgray;border-top: 1px solid darkgray"><a href="#"><span class="glyphicon glyphicon glyphicon-calendar " aria-hidden="true"></span><br>企业团购</a></li>
+              <li style="border-left: 1px solid darkgray;border-top: 1px solid darkgray"><a href="#"><span class="glyphicon glyphicon glyphicon-calendar " aria-hidden="true"></span><br>F码通道</a></li>
+            </ul>
+            </nav>
+        </div>
+      </div>
+      <div class="col-lg-9">
+      <div class="col-lg-4">
+        <img src="QQ图片20170824123536.png" style="width:270px;height: 170px;">
+      </div>
+      <div class="col-lg-4">
+        <img src="QQ图片20170824123644.png" style="width:270px;height: 170px;">
+      </div>
+      <div class=" col-lg-4">
+        <img src="QQ图片20170824123827.png" style="width:270px;height: 170px;">
+      </div>
+        </div>
+    </div>
+
+
+    <div class="container" style="margin-top: 30px;height: 420px">
+          <h3 style="margin-left: -15px">小米明星单品</h3>
+          <div style="">
+            <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators center-block" >
+                <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <div class="row">
+                    <div class="col-lg-3" >
+                      <div style="background-color: #fafafa;height: 100%;border-top:1px solid orange;padding-top: 30px;padding-bottom: 30px">
+                      <img src="红米4X.png" class="img-responsive center-block" style="height: 190px;width: 65%">
+                      <p class="text-center">红米4X</p>
+                      <p class="text-center text-muted">4100mAh超长续航，8 核处理器</p>
+                      <p class="text-center text-danger">699元起</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-3" >
+                      <div style="background-color: #fafafa;height: 100%;border-top:1px solid greenyellow;padding-top: 30px;padding-bottom: 30px">
+                      <img src="红米4X.png" class="img-responsive center-block" style="height: 190px;width: 65%">
+                      <p class="text-center">红米4X</p>
+                      <p class="text-center text-muted">4100mAh超长续航，8 核处理器</p>
+                      <p class="text-center text-danger">699元起</p>
+                    </div>
+                    </div>
+                    <div class="col-lg-3" >
+                      <div style="background-color: #fafafa;height: 100%;border-top:1px solid blue;padding-top: 30px;padding-bottom: 30px">
+                        <img src="红米4X.png" class="img-responsive center-block" style="height: 190px;width: 65%">
+                        <p class="text-center">红米4X</p>
+                        <p class="text-center text-muted">4100mAh超长续航，8 核处理器</p>
+                        <p class="text-center text-danger">699元起</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <div style="background-color: #fafafa;height: 100%;border-top:1px solid red;padding-top: 30px;padding-bottom: 30px">
+                        <img src="红米4X.png" class="img-responsive center-block" style="height: 190px;width: 65%">
+                        <p class="text-center">红米4X</p>
+                        <p class="text-center text-muted">4100mAh超长续航，8 核处理器</p>
+                        <p class="text-center text-danger">699元起</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-caption">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="col-lg-3" >
+                    <div style="background-color: #fafafa;height: 100%;border-top:1px solid orange;padding-top: 30px;padding-bottom: 30px">
+                      <img src="红米Note%204X.png" class="img-responsive center-block" style="height: 190px;width: 65%">
+                      <p class="text-center">红米4X</p>
+                      <p class="text-center text-muted">4100mAh超长续航，多彩金属</p>
+                      <p class="text-center text-danger">999元起</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3" >
+                    <div style="background-color: #fafafa;height: 100%;border-top:1px solid greenyellow;padding-top: 30px;padding-bottom: 30px">
+                      <img src="红米Note%204X.png" class="img-responsive center-block" style="height: 190px;width: 65%">
+                      <p class="text-center">红米4X</p>
+                      <p class="text-center text-muted">4100mAh超长续航，多彩金属</p>
+                      <p class="text-center text-danger">999元起</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3" >
+                    <div style="background-color: #fafafa;height: 100%;border-top:1px solid blue;padding-top: 30px;padding-bottom: 30px">
+                      <img src="红米Note%204X.png" class="img-responsive center-block" style="height: 190px;width: 65%">
+                      <p class="text-center">红米4X</p>
+                      <p class="text-center text-muted">4100mAh超长续航，多彩金属</p>
+                      <p class="text-center text-danger">999元起</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div style="background-color: #fafafa;height: 100%;border-top:1px solid red;padding-top: 30px;padding-bottom: 30px">
+                      <img src="红米Note%204X.png" class="img-responsive center-block" style="height: 190px;width: 65%">
+                      <p class="text-center">红米4X</p>
+                      <p class="text-center text-muted">4100mAh超长续航，多彩金属</p>
+                      <p class="text-center text-danger">999元起</p>
+                    </div>
+                  </div>
+                  <div class="carousel-caption">
+                  </div>
+                </div>
+              </div>
+              <a class="left carousel-control" href="#carousel-example-generic2" role="button" data-slide="prev"
+                 style="width: 45px;height: 32px;background-color: white;border: 2px solid silver;position: absolute;top: -50px;left: 86%">
+                <span class="glyphicon  glyphicon-chevron-left" aria-hidden="true" style="width: 41px;height: 28px;background-color: white;margin-top: -14px;margin-left: -21px"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic2" role="button" data-slide="next"
+                 style="width: 45px;height: 32px;background-color: white;border: 2px solid silver;position: absolute;top: -50px;right: 6%">
+                <span class="glyphicon glyphicon-chevron-right " aria-hidden="true" style="width: 41px;height: 28px;background-color: white;margin-top: -14px;margin-right: -21px"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+    </div>
+
+
+    <div class="huise container-fluid" style="margin-left: -30px">
+    <!-----------家电---------------------------------------------------------------------------->
+      <div class="container">
+        <div class="row">
+          <h3 class="col-lg-2" >家电</h3>
+          <div  class="col-lg-10 " >
+            <!--<ul class="nav nav-tabs navbar-right">-->
+              <!--<li class="active"><a href="#" data-toggle="tab" data-target="#one">热门</a></li>-->
+              <!--<li><a href="#" data-toggle="tab" data-target="#two">电视影音</a></li>-->
+              <!--<li><a href="#" data-toggle="tab" data-target="#three">电脑</a></li>-->
+              <!--<li><a href="#" data-toggle="tab" data-target="#four">家居</a></li>-->
+            <!--</ul>-->
+            <nav class=" navbar-default navbar-right" style="margin-right: 15px;">
+              <ul class="nav nav-tabs ">
+                <li class="active"><a href="#" data-toggle="tab"  data-target="#one">热门</a></li>
+                <li><a href="#" data-toggle="tab" data-target="#two">电视影音</a></li>
+                <li><a href="#" data-toggle="tab" data-target="#three">电脑</a></li>
+                <li><a href="#" data-toggle="tab" data-target="#four">家居</a></li>
+              </ul>
+           </nav>
+          </div>
+        </div>
+      </div>
+      <div class=" container" style="margin-top: 15px">
+        <div class="tab-content">
+          <div id="one" class="tab-pane fade in active">
+         <div class=" col-sm-6 col-md-3">
+           <div class="thumbnail">
+            <img src="pms_1499138177.54329452!220x220.jpg"  >
+            <p class="text-center">小米笔记本Air 13.3" i7处理器</p>
+           <p class="text-center text-muted">intel酷睿i7处理器，8GB内存+256GB</p>
+           <p class="text-center text-danger">5999元</p>
+          </div>
+         </div>
+        <div class=" col-sm-6 col-md-3">
+          <div class="thumbnail">
+          <img src="pms_1499138177.54329452!220x220.jpg"  >
+          <p class="text-center">小米笔记本Air 13.3" i7处理器</p>
+          <p class="text-center text-muted">intel酷睿i7处理器，8GB内存+256GB</p>
+          <p class="text-center text-danger">5999元</p>
+        </div>
+        </div>
+        <div class=" col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <img src="pms_1499138177.54329452!220x220.jpg"  >
+            <p class="text-center">小米笔记本Air 13.3" i7处理器</p>
+            <p class="text-center text-muted">intel酷睿i7处理器，8GB内存+256GB</p>
+            <p class="text-center text-danger">5999元</p>
+          </div>
+        </div>
+        <div class=" col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <img src="pms_1499138177.54329452!220x220.jpg"  >
+            <p class="text-center">小米笔记本Air 13.3" i7处理器</p>
+            <p class="text-center text-muted">intel酷睿i7处理器，8GB内存+256GB</p>
+            <p class="text-center text-danger">5999元</p>
+          </div>
+        </div>
+        <div class=" col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <img src="pms_1499138177.54329452!220x220.jpg"  >
+            <p class="text-center">小米笔记本Air 13.3" i7处理器</p>
+            <p class="text-center text-muted">intel酷睿i7处理器，8GB内存+256GB</p>
+            <p class="text-center text-danger">5999元</p>
+          </div>
+        </div>
+        <div class=" col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <img src="pms_1499138177.54329452!220x220.jpg"  >
+            <p class="text-center">小米笔记本Air 13.3" i7处理器</p>
+            <p class="text-center text-muted">intel酷睿i7处理器，8GB内存+256GB</p>
+            <p class="text-center text-danger">5999元</p>
+          </div>
+        </div>
+        <div class=" col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <img src="pms_1499138177.54329452!220x220.jpg"  >
+            <p class="text-center">小米笔记本Air 13.3" i7处理器</p>
+            <p class="text-center text-muted">intel酷睿i7处理器，8GB内存+256GB</p>
+            <p class="text-center text-danger">5999元</p>
+          </div>
+        </div>
+        <div class=" col-sm-6 col-md-3">
+
+          <div class="thumbnail">
+            <div class="row" style="margin: 22px">
+                <div class="col-lg-6">
+                  <p class="text-center">小白摄像机</p>
+                  <p class="text-center text-danger">379元</p>
+                </div>
+                <div class="col-lg-6">
+                  <img src="小白摄像机.png" >
+                </div>
+           </div>
+        </div>
+
+          <div class="thumbnail">
+            <div class="row" style="margin: 24px">
+              <div class="col-lg-6">
+                  <p class="text-center"><a href="../小米家电浏览更多/index.html">浏览更多</a></p>
+                  <p class="text-center text-muted">热门</p>
+              </div>
+              <div class="col-lg-6">
+                <img src="浏览更多.bmp" >
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+          <div id="two" class="tab-pane fade in ">
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="小米电视4A%2055”标准版.png"  >
+                <p class="text-center">小米电视4A 55"标准版</p>
+                <p class="text-center text-muted">4K高清HDR/真四核64位高性能处理器</p>
+                <p class="text-center text-danger">2999元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="小米电视4A%2055”标准版.png"  >
+                <p class="text-center">小米电视4A 55"标准版</p>
+                <p class="text-center text-muted">4K高清HDR/真四核64位高性能处理器</p>
+                <p class="text-center text-danger">2999元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="小米电视4A%2055”标准版.png"  >
+                <p class="text-center">小米电视4A 55"标准版</p>
+                <p class="text-center text-muted">4K高清HDR/真四核64位高性能处理器</p>
+                <p class="text-center text-danger">2999元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="小米电视4A%2055”标准版.png"  >
+                <p class="text-center">小米电视4A 55"标准版</p>
+                <p class="text-center text-muted">4K高清HDR/真四核64位高性能处理器</p>
+                <p class="text-center text-danger">2999元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="小米电视4A%2055”标准版.png"  >
+                <p class="text-center">小米电视4A 55"标准版</p>
+                <p class="text-center text-muted">4K高清HDR/真四核64位高性能处理器</p>
+                <p class="text-center text-danger">2999元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="小米电视4A%2055”标准版.png"  >
+                <p class="text-center">小米电视4A 55"标准版</p>
+                <p class="text-center text-muted">4K高清HDR/真四核64位高性能处理器</p>
+                <p class="text-center text-danger">2999元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="小米电视4A%2055”标准版.png"  >
+                <p class="text-center">小米电视4A 55"标准版</p>
+                <p class="text-center text-muted">4K高清HDR/真四核64位高性能处理器</p>
+                <p class="text-center text-danger">2999元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+
+              <div class="thumbnail">
+                <div class="row" style="margin: 22px">
+                  <div class="col-lg-6">
+                    <p class="text-center">小白摄像机</p>
+                    <p class="text-center text-danger">379元</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="小白摄像机.png" >
+                  </div>
+                </div>
+              </div>
+
+              <div class="thumbnail">
+                <div class="row" style="margin: 24px">
+                  <div class="col-lg-6">
+                    <p class="text-center"><a href="../小米家电浏览更多/index.html">浏览更多</a></p>
+                    <p class="text-center text-muted">热门</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="浏览更多.bmp" >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="three" class="tab-pane fade in ">
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="小米便携鼠标.jpg"  >
+                <p class="text-center">小米便携鼠标</p>
+                <p class="text-center text-muted">轻薄便携，铝合金外壳+ABS材质</p>
+                <p class="text-center text-danger">99元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="小米便携鼠标.jpg"  >
+                <p class="text-center">小米便携鼠标</p>
+                <p class="text-center text-muted">轻薄便携，铝合金外壳+ABS材质</p>
+                <p class="text-center text-danger">99元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="小米便携鼠标.jpg"  >
+                <p class="text-center">小米便携鼠标</p>
+                <p class="text-center text-muted">轻薄便携，铝合金外壳+ABS材质</p>
+                <p class="text-center text-danger">99元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="小米便携鼠标.jpg"  >
+                <p class="text-center">小米便携鼠标</p>
+                <p class="text-center text-muted">轻薄便携，铝合金外壳+ABS材质</p>
+                <p class="text-center text-danger">99元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="小米便携鼠标.jpg"  >
+                <p class="text-center">小米便携鼠标</p>
+                <p class="text-center text-muted">轻薄便携，铝合金外壳+ABS材质</p>
+                <p class="text-center text-danger">99元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="小米便携鼠标.jpg"  >
+                <p class="text-center">小米便携鼠标</p>
+                <p class="text-center text-muted">轻薄便携，铝合金外壳+ABS材质</p>
+                <p class="text-center text-danger">99元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="小米便携鼠标.jpg"  >
+                <p class="text-center">小米便携鼠标</p>
+                <p class="text-center text-muted">轻薄便携，铝合金外壳+ABS材质</p>
+                <p class="text-center text-danger">99元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+
+              <div class="thumbnail">
+                <div class="row" style="margin: 22px">
+                  <div class="col-lg-6">
+                    <p class="text-center">小白摄像机</p>
+                    <p class="text-center text-danger">379元</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="小白摄像机.png" >
+                  </div>
+                </div>
+              </div>
+
+              <div class="thumbnail">
+                <div class="row" style="margin: 24px">
+                  <div class="col-lg-6">
+                    <p class="text-center"><a href="../小米家电浏览更多/index.html">浏览更多</a></p>
+                    <p class="text-center text-muted">热门</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="浏览更多.bmp" >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="four" class="tab-pane fade in ">
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="米家恒温水壶.jpg"  >
+                <p class="text-center">米家恒温水壶</p>
+                <p class="text-center text-muted">水温智能控制，304不锈钢内胆</p>
+                <p class="text-center text-danger">199元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="米家恒温水壶.jpg"  >
+                <p class="text-center">米家恒温水壶</p>
+                <p class="text-center text-muted">水温智能控制，304不锈钢内胆</p>
+                <p class="text-center text-danger">199元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="米家恒温水壶.jpg"  >
+                <p class="text-center">米家恒温水壶</p>
+                <p class="text-center text-muted">水温智能控制，304不锈钢内胆</p>
+                <p class="text-center text-danger">199元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="米家恒温水壶.jpg"  >
+                <p class="text-center">米家恒温水壶</p>
+                <p class="text-center text-muted">水温智能控制，304不锈钢内胆</p>
+                <p class="text-center text-danger">199元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="米家恒温水壶.jpg"  >
+                <p class="text-center">米家恒温水壶</p>
+                <p class="text-center text-muted">水温智能控制，304不锈钢内胆</p>
+                <p class="text-center text-danger">199元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="米家恒温水壶.jpg"  >
+                <p class="text-center">米家恒温水壶</p>
+                <p class="text-center text-muted">水温智能控制，304不锈钢内胆</p>
+                <p class="text-center text-danger">199元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="米家恒温水壶.jpg"  >
+                <p class="text-center">米家恒温水壶</p>
+                <p class="text-center text-muted">水温智能控制，304不锈钢内胆</p>
+                <p class="text-center text-danger">199元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+
+              <div class="thumbnail">
+                <div class="row" style="margin: 22px">
+                  <div class="col-lg-6">
+                    <p class="text-center">小白摄像机</p>
+                    <p class="text-center text-danger">379元</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="小白摄像机.png" >
+                  </div>
+                </div>
+              </div>
+
+              <div class="thumbnail">
+                <div class="row" style="margin: 24px">
+                  <div class="col-lg-6">
+                    <p class="text-center"><a href="../小米家电浏览更多/index.html">浏览更多</a></p>
+                    <p class="text-center text-muted">热门</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="浏览更多.bmp" >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-----------智能---------------------------------------------------------------------------->
+      <div class="container">
+        <div class="row">
+          <h3 class="col-lg-2" >智能</h3>
+          <div  class="col-lg-10 " >
+            <!--<ul class="nav nav-tabs navbar-right">-->
+            <!--<li class="active"><a href="#" data-toggle="tab" data-target="#one">热门</a></li>-->
+            <!--<li><a href="#" data-toggle="tab" data-target="#two">电视影音</a></li>-->
+            <!--<li><a href="#" data-toggle="tab" data-target="#three">电脑</a></li>-->
+            <!--<li><a href="#" data-toggle="tab" data-target="#four">家居</a></li>-->
+            <!--</ul>-->
+            <nav class=" navbar-default navbar-right" style="margin-right: 15px;">
+              <ul class="nav nav-tabs ">
+                <li class="active"><a href="#" data-toggle="tab"  data-target="#one2">热门</a></li>
+                <li><a href="#" data-toggle="tab" data-target="#two2">出行</a></li>
+                <li><a href="#" data-toggle="tab" data-target="#three2">健康</a></li>
+                <li><a href="#" data-toggle="tab" data-target="#four2">酷玩</a></li>
+                <li><a href="#" data-toggle="tab" data-target="#five2">路由器</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class=" container" style="margin-top: 15px">
+
+        <div class="tab-content">
+          <div id="one2" class="tab-pane fade in active">
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能热门.jpg"  >
+                <p class="text-center">米家全景相机套餐</p>
+                <p class="text-center text-muted">2388万有效像素，IP67级防水防尘</p>
+                <p class="text-center text-danger">1699元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能热门.jpg"  >
+                <p class="text-center">米家全景相机套餐</p>
+                <p class="text-center text-muted">2388万有效像素，IP67级防水防尘</p>
+                <p class="text-center text-danger">1699元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能热门.jpg"  >
+                <p class="text-center">米家全景相机套餐</p>
+                <p class="text-center text-muted">2388万有效像素，IP67级防水防尘</p>
+                <p class="text-center text-danger">1699元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能热门.jpg"  >
+                <p class="text-center">米家全景相机套餐</p>
+                <p class="text-center text-muted">2388万有效像素，IP67级防水防尘</p>
+                <p class="text-center text-danger">1699元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能热门.jpg"  >
+                <p class="text-center">米家全景相机套餐</p>
+                <p class="text-center text-muted">2388万有效像素，IP67级防水防尘</p>
+                <p class="text-center text-danger">1699元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能热门.jpg"  >
+                <p class="text-center">米家全景相机套餐</p>
+                <p class="text-center text-muted">2388万有效像素，IP67级防水防尘</p>
+                <p class="text-center text-danger">1699元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能热门.jpg"  >
+                <p class="text-center">米家全景相机套餐</p>
+                <p class="text-center text-muted">2388万有效像素，IP67级防水防尘</p>
+                <p class="text-center text-danger">1699元</p>
+              </div>
+            </div>
+
+            <div class=" col-sm-6 col-md-3">
+
+              <div class="thumbnail">
+                <div class="row" style="margin: 22px">
+                  <div class="col-lg-6">
+                    <p class="text-center">小白摄像机</p>
+                    <p class="text-center text-danger">379元</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="小白摄像机.png" >
+                  </div>
+                </div>
+              </div>
+
+              <div class="thumbnail">
+                <div class="row" style="margin: 24px">
+                  <div class="col-lg-6">
+                    <p class="text-center"><a href="../小米智能浏览更多/index.html">浏览更多</a></p>
+                    <p class="text-center text-muted">热门</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="浏览更多.bmp" >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="two2" class="tab-pane fade in ">
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能出行.jpg"  >
+                <p class="text-center">电助力折叠自行车</p>
+                <p class="text-center text-muted">力矩传感电助力，折叠便携设计</p>
+                <p class="text-center text-danger">2999元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能出行.jpg"  >
+                <p class="text-center">电助力折叠自行车</p>
+                <p class="text-center text-muted">力矩传感电助力，折叠便携设计</p>
+                <p class="text-center text-danger">2999元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能出行.jpg"  >
+                <p class="text-center">电助力折叠自行车</p>
+                <p class="text-center text-muted">力矩传感电助力，折叠便携设计</p>
+                <p class="text-center text-danger">2999元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能出行.jpg"  >
+                <p class="text-center">电助力折叠自行车</p>
+                <p class="text-center text-muted">力矩传感电助力，折叠便携设计</p>
+                <p class="text-center text-danger">2999元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能出行.jpg"  >
+                <p class="text-center">电助力折叠自行车</p>
+                <p class="text-center text-muted">力矩传感电助力，折叠便携设计</p>
+                <p class="text-center text-danger">2999元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能出行.jpg"  >
+                <p class="text-center">电助力折叠自行车</p>
+                <p class="text-center text-muted">力矩传感电助力，折叠便携设计</p>
+                <p class="text-center text-danger">2999元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能出行.jpg"  >
+                <p class="text-center">电助力折叠自行车</p>
+                <p class="text-center text-muted">力矩传感电助力，折叠便携设计</p>
+                <p class="text-center text-danger">2999元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+
+              <div class="thumbnail">
+                <div class="row" style="margin: 22px">
+                  <div class="col-lg-6">
+                    <p class="text-center">小白摄像机</p>
+                    <p class="text-center text-danger">379元</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="小白摄像机.png" >
+                  </div>
+                </div>
+              </div>
+
+              <div class="thumbnail">
+                <div class="row" style="margin: 24px">
+                  <div class="col-lg-6">
+                    <p class="text-center">浏览更多</p>
+                    <p class="text-center text-muted">热门</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="浏览更多.bmp" >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="three2" class="tab-pane fade in ">
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能健康.jpg"  >
+                <p class="text-center">Yeelight床头灯</p>
+                <p class="text-center text-muted">触摸式操作体验，给卧室1600万</p>
+                <p class="text-center text-danger">199元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能健康.jpg"  >
+                <p class="text-center">Yeelight床头灯</p>
+                <p class="text-center text-muted">触摸式操作体验，给卧室1600万</p>
+                <p class="text-center text-danger">199元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能健康.jpg"  >
+                <p class="text-center">Yeelight床头灯</p>
+                <p class="text-center text-muted">触摸式操作体验，给卧室1600万</p>
+                <p class="text-center text-danger">199元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能健康.jpg"  >
+                <p class="text-center">Yeelight床头灯</p>
+                <p class="text-center text-muted">触摸式操作体验，给卧室1600万</p>
+                <p class="text-center text-danger">199元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能健康.jpg"  >
+                <p class="text-center">Yeelight床头灯</p>
+                <p class="text-center text-muted">触摸式操作体验，给卧室1600万</p>
+                <p class="text-center text-danger">199元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能健康.jpg"  >
+                <p class="text-center">Yeelight床头灯</p>
+                <p class="text-center text-muted">触摸式操作体验，给卧室1600万</p>
+                <p class="text-center text-danger">199元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能健康.jpg"  >
+                <p class="text-center">Yeelight床头灯</p>
+                <p class="text-center text-muted">触摸式操作体验，给卧室1600万</p>
+                <p class="text-center text-danger">199元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+
+              <div class="thumbnail">
+                <div class="row" style="margin: 22px">
+                  <div class="col-lg-6">
+                    <p class="text-center">小白摄像机</p>
+                    <p class="text-center text-danger">379元</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="小白摄像机.png" >
+                  </div>
+                </div>
+              </div>
+
+              <div class="thumbnail">
+                <div class="row" style="margin: 24px">
+                  <div class="col-lg-6">
+                    <p class="text-center">浏览更多</p>
+                    <p class="text-center text-muted">热门</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="浏览更多.bmp" >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="four2" class="tab-pane fade in ">
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能酷玩.jpg"  >
+                <p class="text-center">米兔智能故事机</p>
+                <p class="text-center text-muted">微信远程互动，智能语音交互</p>
+                <p class="text-center text-danger">199元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能酷玩.jpg"  >
+                <p class="text-center">米兔智能故事机</p>
+                <p class="text-center text-muted">微信远程互动，智能语音交互</p>
+                <p class="text-center text-danger">199元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能酷玩.jpg"  >
+                <p class="text-center">米兔智能故事机</p>
+                <p class="text-center text-muted">微信远程互动，智能语音交互</p>
+                <p class="text-center text-danger">199元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能酷玩.jpg"  >
+                <p class="text-center">米兔智能故事机</p>
+                <p class="text-center text-muted">微信远程互动，智能语音交互</p>
+                <p class="text-center text-danger">199元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能酷玩.jpg"  >
+                <p class="text-center">米兔智能故事机</p>
+                <p class="text-center text-muted">微信远程互动，智能语音交互</p>
+                <p class="text-center text-danger">199元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能酷玩.jpg"  >
+                <p class="text-center">米兔智能故事机</p>
+                <p class="text-center text-muted">微信远程互动，智能语音交互</p>
+                <p class="text-center text-danger">199元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能酷玩.jpg"  >
+                <p class="text-center">米兔智能故事机</p>
+                <p class="text-center text-muted">微信远程互动，智能语音交互</p>
+                <p class="text-center text-danger">199元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+
+              <div class="thumbnail">
+                <div class="row" style="margin: 22px">
+                  <div class="col-lg-6">
+                    <p class="text-center">小白摄像机</p>
+                    <p class="text-center text-danger">379元</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="小白摄像机.png" >
+                  </div>
+                </div>
+              </div>
+
+              <div class="thumbnail">
+                <div class="row" style="margin: 24px">
+                  <div class="col-lg-6">
+                    <p class="text-center">浏览更多</p>
+                    <p class="text-center text-muted">热门</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="浏览更多.bmp" >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="five2" class="tab-pane fade in ">
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能路由器.jpg"  >
+                <p class="text-center">小米路由器3C</p>
+                <p class="text-center text-muted">APP智能控制，安全防蹭网</p>
+                <p class="text-center text-danger">99元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能路由器.jpg"  >
+                <p class="text-center">小米路由器3C</p>
+                <p class="text-center text-muted">APP智能控制，安全防蹭网</p>
+                <p class="text-center text-danger">99元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能路由器.jpg"  >
+                <p class="text-center">小米路由器3C</p>
+                <p class="text-center text-muted">APP智能控制，安全防蹭网</p>
+                <p class="text-center text-danger">99元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能路由器.jpg"  >
+                <p class="text-center">小米路由器3C</p>
+                <p class="text-center text-muted">APP智能控制，安全防蹭网</p>
+                <p class="text-center text-danger">99元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能路由器.jpg"  >
+                <p class="text-center">小米路由器3C</p>
+                <p class="text-center text-muted">APP智能控制，安全防蹭网</p>
+                <p class="text-center text-danger">99元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能路由器.jpg"  >
+                <p class="text-center">小米路由器3C</p>
+                <p class="text-center text-muted">APP智能控制，安全防蹭网</p>
+                <p class="text-center text-danger">99元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <img src="智能路由器.jpg"  >
+                <p class="text-center">小米路由器3C</p>
+                <p class="text-center text-muted">APP智能控制，安全防蹭网</p>
+                <p class="text-center text-danger">99元</p>
+              </div>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+
+              <div class="thumbnail">
+                <div class="row" style="margin: 22px">
+                  <div class="col-lg-6">
+                    <p class="text-center">小白摄像机</p>
+                    <p class="text-center text-danger">379元</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="小白摄像机.png" >
+                  </div>
+                </div>
+              </div>
+
+              <div class="thumbnail">
+                <div class="row" style="margin: 24px">
+                  <div class="col-lg-6">
+                    <p class="text-center">浏览更多</p>
+                    <p class="text-center text-muted">热门</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="浏览更多.bmp" >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-----------热评产品---------------------------------------------------------------------------->
+      <div class="container">
+        <div class="row">
+          <h3 class="col-lg-2" >热评产品</h3>
+        </div>
+      </div>
+      <div class="container" >
+        <div class="row">
+          <div class="col-lg-3" >
+            <div style="background-color: white">
+            <img src="热评产品1.jpg" class="img-responsive">
+            <p class="text-left" style="margin-top:15px;margin-left:15px;margin-right: 15px;margin-bottom: 20px ">
+              这箱子很好，外观很漂亮，实用性强。很轻，有点软但不影响它的坚固</p>
+            <p class="text-left text-muted" style="margin-top:45px;margin-left:15px;margin-right: 15px;font-size: 8px">
+              来自于 子书雁 的评价</p>
+            <p class="text-left " style="margin-top:-10px;margin-left:15px;margin-right: 15px ">
+              90分旅行箱 20寸  <span class="text-danger" style="border-left: 2px solid silver">&nbsp;&nbsp;259元</span></p><br>
+            </div>
+          </div>
+          <div class="col-lg-3" >
+            <div style="background-color: white">
+              <img src="热评产品2.jpg" class="img-responsive">
+              <p class="text-left" style="margin-top:15px;margin-left:15px;margin-right: 15px;margin-bottom: 20px ">
+                包装很让人感动，式样也很可爱，做出的饭全家都爱吃，超爱五星！手机控制还是不太熟练，最主要是没有...</p>
+              <p class="text-left text-muted" style="margin-top:25px;margin-left:15px;margin-right: 15px;font-size: 8px">
+                来自于 HZG 的评价</p>
+              <p class="text-left " style="margin-top:-10px;margin-left:15px;margin-right: 15px;">
+                米家压力IH电饭煲  <span class="text-danger" style="border-left: 2px solid silver">&nbsp;&nbsp;999元</span></p><br>
+            </div>
+          </div>
+          <div class="col-lg-3" >
+            <div style="background-color: white">
+              <img src="热评产品3.jpg" class="img-responsive">
+              <p class="text-left" style="margin-top:15px;margin-left:15px;margin-right: 15px;margin-bottom: 20px ">
+                样子好可爱，特别是转来转去时很有趣，让它休眠时它就会把头转过去背对着你了，唤醒它又会自动转回来。</p>
+              <p class="text-left text-muted" style="margin-top:25px;margin-left:15px;margin-right: 15px;font-size: 8px">
+                来自于 随风 的评价</p>
+              <p class="text-left " style="margin-top:-10px;margin-left:15px;margin-right: 15px;">
+                米家小白智能摄像机  <span class="text-danger" style="border-left: 2px solid silver">&nbsp;&nbsp;399元</span></p><br>
+            </div>
+          </div>
+          <div class="col-lg-3" >
+            <div style="background-color: white">
+              <img src="热评产品4.jpg" class="img-responsive">
+              <p class="text-left" style="margin-top:15px;margin-left:15px;margin-right: 15px;margin-bottom: 20px ">
+              超级喜欢！小巧玲珑！音质完美！不知道为什么！只要小米出的东西我都喜欢！那倒是因为那一句？小米为...</p>
+              <p class="text-left text-muted" style="margin-top:25px;margin-left:15px;margin-right: 15px;font-size: 8px">
+                来自于 田密 的评价</p>
+              <p class="text-left " style="margin-top:-10px;margin-left:15px;margin-right: 15px;">
+                小米随身蓝牙音箱  <span class="text-danger" style="border-left: 2px solid silver">&nbsp;&nbsp;399元</span></p><br>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    <!-----------内容------------------------------------------------------------------------------------>
+      <div class="container">
+        <div class="row">
+          <h3 class="col-lg-2" >内容</h3>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3" >
+            <div style="background-color: white;border-top:1px solid orange">
+              <p class="text-center" style="margin-top: 35px;color: orange">图书</p>
+              <div id="carousel-example-generic31" class="carousel slide" data-ride="carousel">
+
+                <ol class="carousel-indicators" style="background-color: orange" >
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active " ></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1" ></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2" ></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="3" ></li>
+                </ol>
+
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <br>
+                    <p class="text-center" style="font-size: 21px">吴亦凡定制主题</p>
+                    <p class="text-center text-muted"style="margin-left: 15px;margin-right: 15px">6张锁屏动态壁纸随机，每张都给你惊喜！</p>
+                    <p class="text-center">免费</p><br>
+                    <img src="内容2.jpg" class="img-responsive center-block">
+                    <br><br>
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+                  <div class="item">
+                    <br>
+                    <p class="text-center" style="font-size: 21px">夏日狂想</p>
+                    <p class="text-center center-block text-muted" style="margin-left: 15px;margin-right: 15px">官方主题新画风，原来你是这样的小清新！</p>
+                    <p class="text-center">免费</p><br>
+                    <img src="内容3.jpg" class="img-responsive center-block">
+                    <br><br>
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+                  <div class="item ">
+                    <br>
+                    <p class="text-center" style="font-size: 21px">几何</p>
+                    <p class="text-center center-block text-muted" style="margin-left: 15px;margin-right: 15px">最新官方主题，带你感受级简视觉冲击</p>
+                    <p class="text-center">免费</p><br>
+                    <img src="内容4.jpg" class="img-responsive center-block">
+                    <br><br>
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+                  <div class="item ">
+                    <br>
+                    <p class="text-center center-block text-muted" style="margin-left: 15px;margin-right: 15px">最新官方主题，带你感受级简视觉冲击</p>
+                    <button type="submit" class="btn btn-default center-block" style="border:1px solid orange;color: orange;margin-top: 20px">前往MIUI主题市场</button>
+                    <br>
+                    <img src="内容.jpg" class="img-responsive center-block" style="margin-top: 6px">
+                    <br><br><br>
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+                </div>
+                <a class="left carousel-control" href="#carousel-example-generic31" role="button" data-slide="prev"
+                   style="height: 60px;width: 30px;position: absolute;top: 120px;left: 0px">
+                  <span class="glyphicon glyphicon-chevron-left center-block" aria-hidden="true" ></span>
+                  <span class="sr-only" >Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic31" role="button" data-slide="next"
+                   style="height: 60px;width: 30px;position: absolute;top: 120px;right: 0px">
+                  <span class="glyphicon glyphicon-chevron-right center-block" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3" >
+            <div style="background-color: white;border-top:1px solid green">
+              <p class="text-center" style="margin-top: 35px;color: green">图书</p>
+              <div id="carousel-example-generic32" class="carousel slide" data-ride="carousel">
+
+                <ol class="carousel-indicators" style="background-color: green" >
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active " ></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1" ></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2" ></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="3" ></li>
+                </ol>
+
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <br>
+                    <p class="text-center" style="font-size: 21px">吴亦凡定制主题</p>
+                    <p class="text-center text-muted"style="margin-left: 15px;margin-right: 15px">6张锁屏动态壁纸随机，每张都给你惊喜！</p>
+                    <p class="text-center">免费</p><br>
+                    <img src="内容2.jpg" class="img-responsive center-block">
+                    <br><br>
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+                  <div class="item">
+                    <br>
+                    <p class="text-center" style="font-size: 21px">夏日狂想</p>
+                    <p class="text-center center-block text-muted" style="margin-left: 15px;margin-right: 15px">官方主题新画风，原来你是这样的小清新！</p>
+                    <p class="text-center">免费</p><br>
+                    <img src="内容3.jpg" class="img-responsive center-block">
+                    <br><br>
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+                  <div class="item ">
+                    <br>
+                    <p class="text-center" style="font-size: 21px">几何</p>
+                    <p class="text-center center-block text-muted" style="margin-left: 15px;margin-right: 15px">最新官方主题，带你感受级简视觉冲击</p>
+                    <p class="text-center">免费</p><br>
+                    <img src="内容4.jpg" class="img-responsive center-block">
+                    <br><br>
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+                  <div class="item ">
+                    <br>
+                    <p class="text-center center-block text-muted" style="margin-left: 15px;margin-right: 15px">最新官方主题，带你感受级简视觉冲击</p>
+                    <button type="submit" class="btn btn-default center-block" style="border:1px solid green;color: green;margin-top: 20px">前往MIUI主题市场</button>
+                    <br>
+                    <img src="内容.jpg" class="img-responsive center-block" style="margin-top: 6px">
+                    <br><br><br>
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+                </div>
+                <a class="left carousel-control" href="#carousel-example-generic32" role="button" data-slide="prev"
+                   style="height: 60px;width: 30px;position: absolute;top: 120px;left: 0px">
+                  <span class="glyphicon glyphicon-chevron-left center-block" aria-hidden="true" ></span>
+                  <span class="sr-only" >Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic32" role="button" data-slide="next"
+                   style="height: 60px;width: 30px;position: absolute;top: 120px;right: 0px">
+                  <span class="glyphicon glyphicon-chevron-right center-block" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3" >
+            <div style="background-color: white;border-top:1px solid red">
+              <p class="text-center" style="margin-top: 35px;color: red">图书</p>
+              <div id="carousel-example-generic33" class="carousel slide" data-ride="carousel">
+
+                <ol class="carousel-indicators" style="background-color: red" >
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active " ></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1" ></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2" ></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="3" ></li>
+                </ol>
+
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <br>
+                    <p class="text-center" style="font-size: 21px">吴亦凡定制主题</p>
+                    <p class="text-center text-muted"style="margin-left: 15px;margin-right: 15px">6张锁屏动态壁纸随机，每张都给你惊喜！</p>
+                    <p class="text-center">免费</p><br>
+                    <img src="内容2.jpg" class="img-responsive center-block">
+                    <br><br>
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+                  <div class="item">
+                    <br>
+                    <p class="text-center" style="font-size: 21px">夏日狂想</p>
+                    <p class="text-center center-block text-muted" style="margin-left: 15px;margin-right: 15px">官方主题新画风，原来你是这样的小清新！</p>
+                    <p class="text-center">免费</p><br>
+                    <img src="内容3.jpg" class="img-responsive center-block">
+                    <br><br>
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+                  <div class="item ">
+                    <br>
+                    <p class="text-center" style="font-size: 21px">几何</p>
+                    <p class="text-center center-block text-muted" style="margin-left: 15px;margin-right: 15px">最新官方主题，带你感受级简视觉冲击</p>
+                    <p class="text-center">免费</p><br>
+                    <img src="内容4.jpg" class="img-responsive center-block">
+                    <br><br>
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+                  <div class="item ">
+                    <br>
+                    <p class="text-center center-block text-muted" style="margin-left: 15px;margin-right: 15px">最新官方主题，带你感受级简视觉冲击</p>
+                    <button type="submit" class="btn btn-default center-block" style="border:1px solid red;color: red;margin-top: 20px">前往MIUI主题市场</button>
+                    <br>
+                    <img src="内容.jpg" class="img-responsive center-block" style="margin-top: 6px">
+                    <br><br><br>
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+                </div>
+                <a class="left carousel-control" href="#carousel-example-generic33" role="button" data-slide="prev"
+                   style="height: 60px;width: 30px;position: absolute;top: 120px;left: 0px">
+                  <span class="glyphicon glyphicon-chevron-left center-block" aria-hidden="true" ></span>
+                  <span class="sr-only" >Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic33" role="button" data-slide="next"
+                   style="height: 60px;width: 30px;position: absolute;top: 120px;right: 0px">
+                  <span class="glyphicon glyphicon-chevron-right center-block" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3" >
+            <div style="background-color: white;border-top:1px solid blue">
+              <p class="text-center" style="margin-top: 35px;color: blue">图书</p>
+              <div id="carousel-example-generic34" class="carousel slide" data-ride="carousel">
+
+                <ol class="carousel-indicators" style="background-color: blue" >
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active " ></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1" ></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2" ></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="3" ></li>
+                </ol>
+
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <br>
+                    <p class="text-center" style="font-size: 21px">吴亦凡定制主题</p>
+                    <p class="text-center text-muted"style="margin-left: 15px;margin-right: 15px">6张锁屏动态壁纸随机，每张都给你惊喜！</p>
+                    <p class="text-center">免费</p><br>
+                    <img src="内容2.jpg" class="img-responsive center-block">
+                    <br><br>
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+                  <div class="item">
+                    <br>
+                    <p class="text-center" style="font-size: 21px">夏日狂想</p>
+                    <p class="text-center center-block text-muted" style="margin-left: 15px;margin-right: 15px">官方主题新画风，原来你是这样的小清新！</p>
+                    <p class="text-center">免费</p><br>
+                    <img src="内容3.jpg" class="img-responsive center-block">
+                    <br><br>
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+                  <div class="item ">
+                    <br>
+                    <p class="text-center" style="font-size: 21px">几何</p>
+                    <p class="text-center center-block text-muted" style="margin-left: 15px;margin-right: 15px">最新官方主题，带你感受级简视觉冲击</p>
+                    <p class="text-center">免费</p><br>
+                    <img src="内容4.jpg" class="img-responsive center-block">
+                    <br><br>
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+                  <div class="item ">
+                    <br>
+                    <p class="text-center center-block text-muted" style="margin-left: 15px;margin-right: 15px">最新官方主题，带你感受级简视觉冲击</p>
+                    <button type="submit" class="btn btn-default center-block" style="border:1px solid blue;color: blue;margin-top: 20px">前往MIUI主题市场</button>
+                    <br>
+                    <img src="内容.jpg" class="img-responsive center-block" style="margin-top: 6px">
+                    <br><br><br>
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+                </div>
+                <a class="left carousel-control" href="#carousel-example-generic34" role="button" data-slide="prev"
+                   style="height: 60px;width: 30px;position: absolute;top: 120px;left: 0px">
+                  <span class="glyphicon glyphicon-chevron-left center-block" aria-hidden="true" ></span>
+                  <span class="sr-only" >Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic34" role="button" data-slide="next"
+                   style="height: 60px;width: 30px;position: absolute;top: 120px;right: 0px">
+                  <span class="glyphicon glyphicon-chevron-right center-block" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="footer container-fluid">
+      <div class="container" style="margin-top: 30px;">
+        <div class="col-lg-3">
+          <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+          <span style="font-size: 20px">预约维修服务</span></div>
+        <div class="col-lg-3" style="border-left:1px solid silver">
+          <span class=" glyphicon glyphicon-time" aria-hidden="true"></span>
+          <span style="font-size: 20px">7天无理由退货</span></div>
+        <div class="col-lg-3" style="border-left:1px solid silver">
+          <span class=" glyphicon glyphicon-download" aria-hidden="true"></span>
+          <span style="font-size: 20px">15天免费换货</span></div>
+        <div class="col-lg-3" style="border-left:1px solid silver">
+          <span class=" glyphicon glyphicon-upload" aria-hidden="true"></span>
+            <span style="font-size: 20px">满150元包邮</span></div>
+      </div>
+      <div class="container"><hr></div>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-9" >
+                <div class="row">
+                  <div class="col-lg-2">
+                    <h4>帮助中心</h4><br>
+                    <span class="text-muted">账户管理</span><br>
+                    <span class="text-muted">购物指南</span><br>
+                    <span class="text-muted">订单操作</span>
+                  </div>
+                  <div class="col-lg-2"> <h4>服务支持</h4><br>
+                    <span class="text-muted">售后政策</span><br>
+                    <span class="text-muted">自助服务</span><br>
+                    <span class="text-muted">相关下载</span></div>
+                  <div class="col-lg-2"><h4>线下门店</h4><br>
+                    <span class="text-muted">小米之家</span><br>
+                    <span class="text-muted">服务网点</span><br>
+                    <span class="text-muted">零售网点</span></div>
+                  <div class="col-lg-2"><h4>关于小米</h4><br>
+                    <span class="text-muted">了解小米</span><br>
+                    <span class="text-muted">加入小米</span><br>
+                    <span class="text-muted">联系我们</span></div>
+                  <div class="col-lg-2"><h4>关注我们</h4><br>
+                    <span class="text-muted">新浪微博</span><br>
+                    <span class="text-muted">小米部落</span><br>
+                    <span class="text-muted">官方微信</span></div>
+                  <div class="col-lg-2"><h4>特色服务</h4><br>
+                    <span class="text-muted">F码通道</span><br>
+                    <span class="text-muted">礼物码</span><br>
+                    <span class="text-muted">防伪查询</span></div>
+                </div>
+              </div>
+              <div class="col-lg-3" style="border-left: 1px solid silver;margin-left: -7px">
+                  <p class="text-center" style="color: orange;font-size: 25px">400-100-5678</p>
+                  <p class="text-muted text-center">周一至周日 8:00-18:00</p>
+                  <p class="text-muted text-center">(仅收市话费)</p>
+                  <button class="btn btn-default center-block" type="submit" style="border: 1px solid orange">
+                    <span class=" glyphicon glyphicon-comment" style="color: orange" aria-hidden="true"></span>
+                    <span style="color: orange">24小时在线客服</span>
+                  </button>
+              </div>
+          </div>
+      </div>
+
+      <div class="container" style="margin-top: 45px">
+        <div class="row">
+          <div class="col-lg-8" >
+            <div class="row">
+              <div class="col-lg-1" style="">
+                <img src="QQ图片20170824101322.png">
+              </div>
+              <div class="col-lg-11" style="margin-top: -15px">
+                <nav class="daohanglan navbar-default" >
+                  <ul class=" nav navbar-nav" style="height: 40px" >
+                    <li><a href="#">小米商城</a></li>
+                    <li><a href="#">MIUI</a></li>
+                    <li><a href="#">米聊</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">多看阅读</a></li>
+                    <li><a href="#">云服务</a></li>
+                    <li><a href="#">金融</a></li>
+                    <li><a href="#">小米商城手机版</a></li>
+                    <li><a href="#">问题反馈</a></li>
+                    <li><a href="#">Select Region</a> </li>
+                  </ul>
+                  </nav>
+                <span class="text-muted" style="font-size: 7px;">©mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号
+                  京网文[2014]0059-0009号违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" style="">
+            <div class="row">
+              <div class="col-lg-3"><img src="尾部图片1.png"  class="img-responsive"></div>
+              <div class="col-lg-3"><img src="尾部图片2.png"  class="img-responsive"></div>
+              <div class="col-lg-3"><img src="尾部图片3.png"  class="img-responsive"></div>
+              <div class="col-lg-3"><img src="尾部图片4.png"  class="img-responsive"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="container" style="margin-top: 40px">
+        <h3 class="text-center text-muted">探索黑科技，小米为发烧而生！</h3>
+      </div>
+
+    </div>
+<!------------------------------------------------------------------------------------------------------------------------->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">确定删除？</h4>
+          </div>
+          <div class="modal-body">
+            !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="quedingshangchu" data-dismiss="modal">是</button>
+            <button type="button" class="btn btn-default">否</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+<script>
+  $('#app').popover({
+    trigger : 'click',
+    html:true,
+    content:"<div style='width: 400px;height:300px'>"+
+    "<img src='小米5X.png' >" +"<span style='color: #0f0f0f'>小米5X</span>"+
+    "<button type='submit' style='border:1px solid orange;background-color: white'><span style='color:orange'>选购</span></button>"+
+    "<br>"+"<br>"+"<img src='小米5c.png'>" +"<span style='color: #0f0f0f'>小米5c</span>"+
+    "<button type='submit' style='border:1px solid orange;background-color: white'><span style='color:orange'>选购</span></button>"+
+    "<br>"+"<br>"+"<img src='小米max2.jpg'>" + "<span style='color: #0f0f0f'>小米max2</span>"+
+    "<button type='submit' style='border:1px solid orange;background-color: white'><span style='color:orange'>选购</span></button>"+
+    "<br>"+"<br>"+"</div>"
+  });
+</script>
+
+<script>
+
+  $(function () {
+       var key=store.get('keyAA')
+       var aaa = store.get('User')
+       var yhm2 = aaa.phone;
+//        var localphonenumber = localStorage.getItem("name");
+//        var a = localStorage["login"];
+        if(key == true){
+          $('#denglu2').show();
+          $('#zhuce').hide();
+          $('#denglu1').hide();
+          $('#gouwuche2').hide();
+          $('#gouwuche3').show();
+          $('#denglu2').html(yhm2);
+        }
+        else{
+          $('#denglu2').hide();
+          $('#zhuce').show();
+          $('#denglu1').show();
+          $('#gouwuche2').show();
+          $('#gouwuche3').hide();
+        }
+  })
+</script>
+<script>
+
+  function outdenglu() {
+        var key = store.get('keyAA')
+        if (key == true){
+          $('#denglu2').hide();
+          $('#zhuce').show();
+          $('#denglu1').show();
+          $('#gouwuche2').show();
+          $('#gouwuche3').hide();
+        }
+        else {
+          $('#denglu2').show();
+          $('#zhuce').hide();
+          $('#denglu1').hide();
+          $('#gouwuche2').hide();
+          $('#gouwuche3').show();
+          $('#denglu2').html(yhm2);
+        }
+   }
+
+</script>
+
+</html>

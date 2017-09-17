@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小米账号登录</title>
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css">
+    <script src="../jquery/dist/jquery.js"></script>
+    <script src="../bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../localStage.js"></script>
+    <!--<script src="jqjq.js"></script>-->
+</head>
+<body>
+     <div class="container">
+       <div class="row">
+       <div class="col-lg-1">
+       <img src="img/小米图标.png" class="img-responsive" style="margin-top: 18px;width: 80px;height: 70px"></div>
+       <div class="col-lg-3">
+       <h1 >小米商城</h1>
+       <p style="font-size: 0.5px">让每个人都能享受科技的乐趣</p></div>
+       </div>
+       <br>
+     </div>
+     <div class="container-fluid" style="background-color: #c4e3f3;">
+          <div class="row">
+            <br><br>
+              <div class="col-lg-offset-8 col-lg-3" style="background-color:white">
+                  <div class="row" style="margin-top: 10px">
+                    <div class="col-lg-6"><h3  class="text-center" style="color: orange"><span onclick="zh()">账号登录</span></h3></div>
+                    <div class="col-lg-6"><h3 class="text-muted text-center" style="border-left: 1px solid silver"><span onclick="sm()">扫码登录</span></h3></div>
+                  </div><br>
+
+                  <div class="smxianshi1">
+                    <br><br><br><br>
+                    <img src="img/二维码.png" class="center-block img-responsive">
+                    <br>
+                    <p class="text-center">使用<span style="color: #ff9b02">小米商城APP</span>扫一扫</p>
+                    <p class="text-center">请打开「设置 > 小米帐号 > 右上角扫一扫」扫码登录</p>
+                  </div>
+
+
+                  <div class="zhxianshi1 row">
+                      <div class="container-fluid">
+                        <input class="form-control" id="inputname" type="text" placeholder="邮箱/手机号码/小米账号" style="height: 50px;font-size: 20px">
+                      </div>
+                    <br>
+                      <div class="container-fluid">
+                        <input class="form-control" id="inputpassword1" type="password" placeholder="密码" style="height: 50px;font-size: 20px">
+                      </div>
+                    <br>
+
+                      <div class="container-fluid">
+                        <div class="form-group">
+                          <div class="row">
+                            <div class="checkbox col-lg-12">
+                              <button class="btn btn-warning btn-lg btn-block " id="lijidenglu" >立即登录</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <br>
+                    </div>
+
+                  <div class="container-fluid zhxianshi1" style="margin-top: -50px;margin-left: 30px">
+                      <nav class="navbar-default" >
+                        <ul class=" nav navbar-nav">
+                          <li class="navbar-collapse">
+                            <a data-toggle="collapse" href="#collapseExample"><p>注册小米账号</p></a>
+                          </li>
+                          <li><a href="#" class="text-muted" ><p style="border-left: 1px solid silver;margin-left: -30px">
+                            &nbsp;&nbsp;忘记密码?</p></a></li>
+                        </ul>
+                      </nav>
+                  </div>
+                  <br><br>
+                  <div class="container-fluid ">
+                    <div class="col-lg-4" style="border-top: 1px solid silver"></div>
+                    <div class="col-lg-4 text-muted" style="font-size: 10px;margin-top: -9px">其他方式登录</div>
+                    <div class="col-lg-4" style="border-top: 1px solid silver"></div>
+                  </div>
+                            <br>
+                  <div class="container-fluid zhxianshi1" >
+                    <div class="row" style="margin-top: 11px">
+                      <div class="col-lg-3" style="margin-top: 1px"><img src="img/QQ.png"></div>
+                      <div class="col-lg-3" style="margin-top: 4px;margin-left:-10px "><img src="img/微信.png"></div>
+                      <div class="col-lg-3"><img src="img/微博.png"></div>
+                      <div class="col-lg-3" style="margin-left:-10px "><img src="img/支付宝.png"></div>
+                    </div>
+                  </div>
+                  <br><br>
+              </div>
+          </div>
+       <br><br>
+     </div>
+
+     <div class="container ">
+       <div style="margin-left: 400px;margin-top: 50px">
+         <nav class="navbar-default " >
+           <ul class=" nav navbar-nav ">
+             <li class="navbar-collapse ">
+               <a data-toggle="collapse" href="#collapseExample"><p style="font-size: 5px">简体</p></a>
+             </li>
+             <li><a href="#" class="text-muted" ><p style="border-left: 1px solid silver;font-size: 5px">
+               &nbsp;繁体</p></a></li>
+             <li><a href="#" class="text-muted" ><p style="border-left: 1px solid silver;font-size: 5px">
+               &nbsp;English</p></a></li>
+             <li><a href="#" class="text-muted" ><p style="border-left: 1px solid silver;font-size: 5px">
+               &nbsp;常见问题</p></a></li>
+           </ul>
+         </nav>
+       </div></div>
+     <div class="container " style="margin-left: 650px">
+       <p >小米公司版权所有-京ICP备10046444-京公网安备11010802020134号-京ICP证110507号</p>
+
+
+     </div>
+</body>
+<script>
+    $('.smxianshi1').hide();
+  function zh() {
+    $('.zhxianshi1').show();
+    $('.smxianshi1').hide();
+  }
+  function sm() {
+    $('.zhxianshi1').hide();
+    $('.smxianshi1').show();
+  }
+</script>
+
+<script>
+
+  $('#lijidenglu').click(function () {
+    var yhm1 = document.getElementById('inputname').value;
+    var mima1 = document.getElementById('inputpassword1').value;
+    var aaa = store.get('User')
+    var yhm2 = aaa.phone;
+    var mima2 = store.get('keyPassword')
+    if (yhm1 == yhm2 && mima1 == mima2) {
+    store.update('keyAA',true);
+    window.location.href="../小米首页/index.html";
+    }
+    else {
+      alert('密码错误');
+    };
+  });
+
+
+</script>
+</html>

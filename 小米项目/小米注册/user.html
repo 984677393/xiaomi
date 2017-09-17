@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css">
+    <script src="../jquery/dist/jquery.js"></script>
+    <script src="../bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../localStage.js"></script>
+    <script src="jss.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+      <img src="QQ图片20170824101322.png" class="img-responsive center-block">
+      <h1 class="text-center">设置用户名和密码</h1>
+
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label for="inputpassword1" class="col-lg-offset-2 col-lg-2 control-label">密码:</label>
+          <div class="col-lg-4">
+            <input type="password" class="form-control" name="inputpassword1" onfocus="Display2()"   onblur="Confirm_pw()"  id="inputpassword1" placeholder="请输入密码">
+          </div>
+          <div id="sure2" style="display: none; color: #CCCCCC;">密码长度要在8~16字符</div>
+        </div>
+        <div class="form-group">
+          <label for="inputpassword2" class="col-lg-offset-2 col-lg-2 control-label" >确认密码:</label>
+          <div class="col-lg-4">
+            <input type="password" class="form-control" name="inputpassword2"  onfocus="Display3()" onblur="Confirm_cpw()" id="inputpassword2" placeholder="请输入相同的密码">
+          </div>
+          <div id="sure3" style="display: none; color: #CCCCCC;">请再次输入密码</div>
+        </div>
+      </form>
+      <div class="col-lg-offset-4 col-lg-4">
+        <button type="submit" onclick="tijiao()" class="btn btn-warning btn-lg  btn-block" >提交</button>
+      </div>
+
+      <div class="col-lg-offset-4 col-lg-4" style="margin-top: 15px">
+        <p>注册账号即表示您同意并愿意遵守小米<a>用户协议</a>和<a>隐私政策</a></p>
+      </div>
+      </div>
+</body>
+</html>
